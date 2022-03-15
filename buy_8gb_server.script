@@ -1,0 +1,16 @@
+var ram = 16;
+var target = args[0]
+var i = 0;
+var threads = 0
+var cost = 0
+cost = getScriptRam("universalHack.script");
+threads = Math.floor((ram) / cost);
+
+while (i < getPurchasedServerLimit()) {
+    if (getServerMoneyAvailable("home") > getPurchasedServerCost(ram)) {
+        var hostname = purchaseServer("pserv-" + i, ram);
+        scp("universalHack.script", hostname);
+        exec("universalHack.script", hostname, threads, target);
+        ++i;
+    }
+}
