@@ -1,3 +1,5 @@
+// Universal hack script to be used within any other scripts, takes 1 argument which is the name of the target server to hack
+
 target = args[0];
 moneyThresh = getServerMaxMoney(target) * 0.5;
 securityThresh = Math.round(getServerBaseSecurityLevel(target) / 3) + 2;
@@ -14,14 +16,16 @@ for (i = 0; i < programs.length; ++i) {
 	}
 }
 
+//Opens all possible ports on the server, can be edited to loop until we have enough port openers so that the server can be nuked.
+
 nuke(target);
 
 while (true) {
-	if (getServerSecurityLevel(target) > securityThresh) {
+	if (getServerSecurityLevel(target) > securityThresh) { #Weaken if security too high
 		weaken(target);
-	} else if (getServerMoneyAvailable(target) < moneyThresh) {
+	} else if (getServerMoneyAvailable(target) < moneyThresh) { #Grow if money on server is too low
 		grow(target);
 	} else {
-		hack(target);
+		hack(target);  #Otherwise hack
 	}
 }
