@@ -1,3 +1,3 @@
-# bitburner
+# Bitburner
 
-#Contains all the bitburner scripts that I've used
+Contains all the bitburner scripts that I've used
