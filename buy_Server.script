@@ -1,10 +1,10 @@
-var ram = 16;
-var target = args[0]
+var ram = 16; //Select the amount of ram that you want for your servers
+var target = args[0] //Server to be targeted by the scripts that will run on the purchased servers
 var i = 0;
 var threads = 0
 var cost = 0
 cost = getScriptRam("universalHack.script");
-threads = Math.floor((ram) / cost);
+threads = Math.floor((ram) / cost); // Calculate the 
 
 while (i < getPurchasedServerLimit()) {
     if (getServerMoneyAvailable("home") > getPurchasedServerCost(ram)) {
