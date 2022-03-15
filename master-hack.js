@@ -1,3 +1,5 @@
+//This script requires the formulas API in order to function
+
 export async function main(ns) {
 	var hosts = ['hong-fang-tea', 'sigma-cosmetics', 'joesguns', 'nectar-net', 'hong-fang-tea', 'harakiri-sushi', 'neo-net', 'zer0', 'max-hardware', 'iron-gym', 'phantasy', 'silver-helix', 'omega-net', 'crush-fitness', 'the-hub', 'johnson-ortho', 'comptek', 'netlink', 'rothman-uni', 'catalyst', 'summit-uni', 'aevum-police', 'rho-construction', 'millenium-fitness', 'alpha-ent', 'syscore', 'lexo-corp', 'zb-institute', 'snap-fitness', 'global-pharm', 'unitalife', 'galactic-cyber', 'solaris', 'zeus-med', 'aerocorp', 'univ-energy', 'deltaone', 'omnia', 'defcomm', 'icarus', 'zb-def', 'nova-med', 'taiyang-digital', 'infocomm', 'run4theh111z', 'titan-labs', 'microdyne', 'fulcrumtech', 'stormtech', 'kuai-gong', '.', 'b-and-a', 'nwo', 'applied-energetics', 'helios', '4sigma', 'blade', 'clarkinc', 'fulcrumassets', 'vitalife', 'omnitek', 'powerhouse-fitness', 'ecorp', 'megacorp', 'The-Cave', 'w0r1d_d43m0n'];
 	var rhosts = [];
