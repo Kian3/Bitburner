@@ -1,0 +1,1 @@
+This folder contains basic NS1 scripts that I used, these were superseded by the faster NS2 scripts, and it is advised to use NS2 to take advantage of the extra speed you can get from it.
