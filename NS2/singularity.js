@@ -1,3 +1,5 @@
+// This is not my code, all credit goes to Danial Glasser, shown below.
+
 /** @param {NS} ns **/
 // Post reset unattended start-up script that requires that the Singularity functions
 // are available to the player (SF4 or in BitNode 4).  Outside of BN1, this script 
